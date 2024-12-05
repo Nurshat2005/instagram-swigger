@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Billabong&display=swap');
+$light-bg: #fafafa;
+$light-text: #262626;
+$light-border: #dbdbdb;
+$light-button-bg: #0095f6;
+$light-button-hover-bg: #007acc;
+
+$dark-bg: #121212;
+$dark-text: #e0e0e0;
+$dark-border: #444;
+$dark-button-bg: #1a73e8;
+$dark-button-hover-bg: #3367d6;
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  background: $light-bg;
+  transition: background 0.3s, color 0.3s;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    .instagram {
+      margin: 0 auto;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      width: 370px;
+      border: 0.5px solid $light-border;
+      text-align: center;
+      height: auto;
+    }
+    .hrText {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Центрирует элементы по горизонтали */
+      margin: 10px 0;
+    }
+
+    .line {
+      width: 100px; /* Фиксированная ширина линии, можно изменять */
+      height: 1px;
+      background-color: #ddd; /* Цвет линии */
+      margin: 0 10px; /* Отступы между текстом и линиями */
+    }
+
+    .hrText span {
+      color: #8e8e8e;
+      font-size: 16px;
+      padding: 0 10px;
+    }
+
+    h1 {
+      padding-top: 34px;
+      font-family: 'Billabong', cursive;
+      font-size: 40px;
+      color: #fff;
+      margin: 0;
+      cursor: pointer;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: 1.5px;
+      &::selection {
+        display: none;
+      }
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 80%;
+    background: $light-button-bg;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    letter-spacing: 0.5px;
+    &:hover {
+      background: $light-button-hover-bg;
+    }
+    .facebook {
+      color: white;
+      font-size: 22px;
+    }
+    &::selection {
+      display: none;
+    }
+  }
+  .title {
+    letter-spacing: 0.6px;
+    margin-top: 4px;
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 17px;
+    color: $light-text;
+    font-weight: 800;
+    transition: color 0.3s;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid $light-border;
+    border-radius: 5px;
+    background: $light-bg;
+    color: $light-text;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    box-sizing: border-box;
+  }
+
+  .registerButton {
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    background: $light-button-bg;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 35px;
+    &:hover {
+      background: $light-button-hover-bg;
+    }
+    &::selection {
+      display: none;
+    }
+  }
+
+  .policyText {
+    font-size: 12px;
+    color: $light-text;
+    margin-top: 10px;
+    letter-spacing: 0.7px;
+    line-height: 17px;
+    .text1 {
+      margin-bottom: 10px;
+      span {
+        color: $light-button-bg;
+        cursor: pointer;
+      }
+    }
+    .link {
+      color: $light-button-bg;
+      text-decoration: none;
+    }
+  }
+
+  .loginPrompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 370px;
+    height: 60px;
+    color: $light-text;
+    border: 0.5px solid $light-border;
+
+    .link {
+      color: $light-button-bg;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .downloadApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: $light-text;
+   n{
+    margin-bottom: 5px;
+   }
+    .appLinks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 9px;
+      .image {
+        width: 130px;
+        height: auto;
+        object-fit: contain;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: $dark-bg;
+
+    .container {
+      background: $dark-bg;
+      border-color: $dark-border;
+    }
+
+    .title,
+    .policyText,
+    .loginPrompt,
+    .downloadApp {
+      color: $dark-text;
+    }
+
+    .input {
+      background: $dark-bg;
+      border-color: $dark-border;
+      color: $dark-text;
+    }
+
+    .registerButton {
+      background: $dark-button-bg;
+
+      &:hover {
+        background: $dark-button-hover-bg;
+      }
+    }
+
+    .link {
+      color: $dark-button-bg;
+    }
+
+    .appLink {
+      color: $dark-button-bg;
+      border-color: $dark-border;
+      background: $dark-bg;
+    }
+  }
+}

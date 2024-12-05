@@ -1,0 +1,22 @@
+
+html{
+  color-scheme: dark;
+}
+
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 30px;
+}
+button{
+  cursor: pointer;
+}

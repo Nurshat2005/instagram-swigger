@@ -1,0 +1,24 @@
+// components/Footer.module.scss
+.footer {
+  display: flex; /* Используем Flexbox */
+  justify-content: center;
+  align-items: center; /* Центрируем элементы по горизонтали */
+  margin-top: 20px; /* Отступ сверху */
+  font-size: 14px; /* Размер шрифта для нижнего колонтитула */
+  color: #999; /* Серый цвет для текста */
+  gap: 10px;
+
+  p {
+    margin: 5px 0; /* Отступ между строками */
+    text-align: center; /* Центрируем текст */
+  }
+
+  a {
+    color: #3897f0; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+
+    &:hover {
+      text-decoration: underline; /* Подчеркивание при наведении */
+    }
+  }
+}
